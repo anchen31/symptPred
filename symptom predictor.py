@@ -1,6 +1,6 @@
 import pandas as pd 
 
-df = pd.read_csv('C:/Users/andyc/Downloads/symptom-disease/bosydi.csv')
+df = pd.read_csv('./bosydi.csv')
 baseDf = df.drop_duplicates('name.2')
 	#this is the df i will be using throughout
 listOfBP = baseDf['name'].unique()
